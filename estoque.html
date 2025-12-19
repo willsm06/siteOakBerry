@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/estoque.css" />
+    <title>Estoque</title>
+  </head>
+  <body>
+    <header>
+      <div class="esqHead"><img src="img/oakberryLogo.jpg" alt="Logo" /></div>
+      <div class="dirHead">
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="estoque.html">Estoque</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="esqMain2">
+        <form class="form-estoque" method="get" action="etiqueta.html">
+          <h2>Onde devo ir?</h2>
+
+          <label for="nome">Nome do produto</label>
+          <input
+            type="text"
+            id="nome"
+            placeholder="Digite o nome do produto..."
+          />
+
+          <label for="categoria">Categoria do Produto</label>
+          <select id="categoria">
+            <option value="" disabled selected>Selecione a categoria...</option>
+            <option value="frutas">Frutas</option>
+            <option value="cereais">Cereais</option>
+            <option value="mel">Mel</option>
+            <option value="acai">Açaí</option>
+            <option value="doces">Doces</option>
+            <option value="leite">Leite(Derivados)</option>
+          </select>
+
+          <label for="validade">Data de validade</label>
+          <input type="date" id="validade" placeholder="Selecione a data..." />
+
+          <label for="provedor">Provedor</label>
+          <input
+            type="text"
+            id="provedor"
+            placeholder="Digite o nome do provedor..."
+          />
+
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+      </div>
+
+      <div class="dirMain2">
+        <div class="resultado-container">
+          <h2>Colocar Produto em</h2>
+          <div class="info-box">
+            <p>Corredor 2</p>
+            <p>Seção 3</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="esqFoot">
+        <img src="img/instagram.png" alt="insta" />
+        <img src="img/social.png" alt="whatts" />
+      </div>
+      <div class="centerFoot">
+        <img src="img/oakberryLogo.jpg" alt="Logo" />
+      </div>
+      <div class="dirFoot"><p>OakBerry</p></div>
+    </footer>
+  </body>
+  <script src="js/scriptEstoque.js"></script>
+</html>
